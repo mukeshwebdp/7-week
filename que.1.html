@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Patrick Hand', cursive; 
+        }
+        .container{
+            display: grid;
+            height: 100%;
+            margin: auto;
+            border: 1px solid black;
+            grid-template-areas: 
+            "item1 item1 item1 item2 item2 "
+            ;
+            
+        }
+        .item1{
+            grid-area: item1;
+            align-self: center;
+            background-color: #fff;
+            
+
+        }
+        .item1 > input{
+            width: 170px;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .item1 > h1,p,input{
+            margin-left: 50px;
+            margin-right: 60px;
+        }
+        .item2{
+            grid-area: item2;
+            background-color: yellow;
+            
+        }
+        .item2 > img{
+            width: 77%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <h1>
+                Healthy Food
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at ex neque tempora quo natus quisquam perferendis iste, exercitationem laborum ad aliquam molestias, ullam excepturi officia corporis rerum ducimus harum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolor non vitae laborum harum aliquid aspernatur id dolore obcaecati repellat. Atque enim libero a ad aperiam tempora pariatur explicabo beatae, cumque fugiat exercitationem voluptate, sit alias voluptatibus ab consectetur voluptates rerum! Ad neque cumque illo! Cum eligendi perspiciatis labore quae!
+            </p>
+            <input type="button" value="Read me">
+        </div>
+        <div class="item2">
+            <img src="photo/vegetable.jpg" alt="vegetable photo">
+        </div>
+        
+    </div>
+</body>
+</html>

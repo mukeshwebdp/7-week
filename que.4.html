@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Patrick Hand', cursive; 
+        }
+        .container{
+            display: grid;
+            height: 100%;
+            margin: auto;
+            grid-template-areas: 
+            "item1 item1 item1 item2 item2 "
+            ;
+            
+        }
+        .item1{
+            grid-area: item1;
+            align-self: center;
+            background-color: #fff;
+            
+
+        }
+        .item1 > input{
+            width: 170px;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .item1 > h1,p,input{
+            margin-left: 50px;
+            margin-right: 60px;
+        }
+        .item2{
+            grid-area: item2;
+            background-color: yellow;
+            
+        }
+        .item2 > img{
+            width: 80%;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width:100% ;
+            margin: auto;
+            align-items: center;
+            
+        }
+        nav  img{
+            width: 50px;
+            
+        }
+        .nav-bar > a{
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+            padding-left: 50px;
+        }
+        .nav-bar > a:hover{
+            color: #00ee7f;
+            font-weight: bold;
+        }
+        nav button{
+            width: 60%;
+            font-size: 18px;
+            background-color:  #00ee7f;
+            border: 0;
+            border-radius: 5px;
+            margin-left: 40%;
+        }
+        .section-03{
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            background-color: #2b1e16;
+        }
+        .footer-img img{
+            width: 150px;
+            margin-left: 32%;
+        }
+        .footer-img h1{
+            text-align: center;
+            color: #fff;
+        }
+        .footer-img p{
+            text-align: center;
+            color: #8c6e54;
+        }
+        .section-4{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 35px;
+            margin: auto;
+            align-items: center;
+        }
+        .item-2{
+            margin: auto;
+            margin-top: 20px;
+            width: 400px;
+            height: 270px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .item-2 img{
+            width: 400px;
+            height: 180px;
+        }
+        .item-2 h1{
+            margin-left: 50px;
+            margin-top: -5px;
+        }
+        .item-2 p{
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" alt="logo">
+        <div class="nav-bar">
+            <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+    </nav>
+    <div class="container">
+        <div class="item1">
+            <h1>
+                Healthy Food
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at ex neque tempora quo natus quisquam perferendis iste, exercitationem laborum ad aliquam molestias, ullam excepturi officia corporis rerum ducimus harum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolor non vitae laborum harum aliquid aspernatur id dolore obcaecati repellat. Atque enim libero a ad aperiam tempora pariatur explicabo beatae, cumque fugiat exercitationem voluptate, sit alias voluptatibus ab consectetur voluptates rerum! Ad neque cumque illo! Cum eligendi perspiciatis labore quae!
+            </p>
+            <input type="button" value="Read me">
+        </div>
+        <div class="item2">
+            <img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY=" alt="vegetable photo">
+        </div>
+        
+    </div>
+    <section class="section-03">
+        <div class="footer-img">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"alt="Sub Section1"/>
+            <h1>
+                No Minimum Order
+            </h1>
+            <p>
+                Order in for yourself or for the group, with no restrictionson order value
+            </p>
+        </div>
+        <div class="footer-img">
+            <img
+          src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+          alt="Sub Section2"
+        />
+        <h1>Live Order Tracking</h1>
+        <p>
+          Know where your order is at all times, from the restaurant to your
+          doorstep
+        </p>
+        </div>
+        <div class="footer-img">
+            <img
+          src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+          alt="Sub Section3"
+        />
+        <h1 class="sub-section-03-heading">Lightning-Fast Delivery</h1>
+        <p>
+          Experience Swiggy's superfast delivery for food delivered fresh & on
+          time
+        </p>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="item-2">
+        <img src="https://veganbell.com/wp-content/uploads/2021/09/Dal-Chawal-7.jpg" alt="dal rice">
+        <h1>
+            Order Online
+        </h1>
+        <p>
+            Stay Home and order to your Door Step
+        </p>
+        </div>
+        <div class="item-2">
+            <img src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/fortune/hotels/fortuneinnhaveli-gandhinagar/images/overview-landing-page/dining/hotel-card-listing/orchid.png" alt="On-site Dining">
+            <h1>
+                On-site Dinig
+            </h1>
+            <p>View the city's favourite dining venues.</p>
+        </div>
+        <div class="item-2">
+            <img src="https://static.thehoneycombers.com/wp-content/uploads/sites/2/2022/04/Yang-nightclubs-in-singapore-900x643.png" alt="club">
+            <h1>
+                Nightlife & Clubs
+            </h1>
+            <p>
+                Explore the city's top nightlife outlets & Book tables
+            </p>
+        </div>
+    
+</body>
+</html>
